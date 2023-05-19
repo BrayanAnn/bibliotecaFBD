@@ -1,0 +1,40 @@
+{
+  "name": "projeto_biblioteca_fbd",
+  "version": "1.0.0",
+  "description": "Projeto realizado na discplina de banco de dados, escopo de biblioteca e suas entidades e relacionamentos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrayanAnn/biblioteca.git"
+  },
+  "keywords": [
+    "Biblioteca",
+    "Banco",
+    "de",
+    "dados",
+    "Entidades",
+    "Relacionamento",
+    "Atributos",
+    "biblioteca",
+    "Sistema",
+    "de",
+    "biblioteca",
+    "digital",
+    "Livros",
+    "digitais."
+  ],
+  "author": "Brayan Anderson, Caio Finotti, Rodrigo Fernandes, Vinicius Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrayanAnn/biblioteca/issues"
+  },
+  "homepage": "https://github.com/BrayanAnn/biblioteca#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "materialize-css": "^1.0.0-rc.2",
+    "nodemon": "^2.0.22"
+  }
+}
