@@ -1,22 +1,46 @@
-// Import essential libraries 
 const express = require('express'); 
 const app = express(); 
 const path = require('path'); 
 const router = express.Router(); 
-// Setup essential routes 
-router.get('/', function(req, res) { 
-    let acervo = "inicio";
-    let template = `templates/inicio/index.html`;
 
-    res.sendFile(path.join(__dirname + '/templates/inicio/index.html')); 
-    //__dirname : It will resolve to your project folder. 
-}); 
-router.get('/acervo', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/templates/acervo/index.html')); 
-}); 
-router.get('/livro', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/templates/livro/index.html')); 
-}); 
+app.use(express.json());
+app.use(express.urlencoded({extended:true}))
+
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient()
+
+// ###########ROTAS###########
+
+// GET
+router.get('/api/livros', async (req, res) => {
+    const livros = await prisma.livro.findMany();
+    res.json(livros)
+});
+
+router.get('/api/usuarios', async (req, res) => {
+    const usuarios = await prisma.usuario.findMany();
+    res.json(usuarios)
+});
+
+//POST
+router.post('/api/usuarios/create', async function(req, res){
+    const {name, email}  = req.body;
+
+    const result = await prisma.usuario.create({
+        data: { 
+            name,
+            email,
+        },
+    })
+    console.log(result);
+    res.json(result);
+
+});
+
+
+app.get('/', async(req,res) =>{
+    res.sendFile(__dirname + '/test.html');
+});
 //add the router 
 app.use('/', router); 
 app.listen(process.env.port || 3000); 

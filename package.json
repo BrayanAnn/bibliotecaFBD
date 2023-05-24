@@ -33,8 +33,15 @@
   },
   "homepage": "https://github.com/BrayanAnn/biblioteca#readme",
   "dependencies": {
+    "@prisma/client": "^4.14.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "html": "^1.0.0",
     "materialize-css": "^1.0.0-rc.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.14.1"
   }
 }
