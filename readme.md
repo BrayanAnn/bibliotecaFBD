@@ -1,7 +1,9 @@
 <h1>Configuração do projeto</h1>
 <p>Para executar o projeto é necessário ter instalado:</p>
-<li>Node.js (v18.16.0 ou superior)</li>
-<li>POSTGRESQL (versão 15 ou superior)</li>
+<ul>
+  <li>Node.js (v18.16.0 ou superior)</li>
+  <li>POSTGRESQL (versão 15 ou superior)</li>
+</ul>
 <p>Logo após a instalação é necessário executar os arquivos SQL no query tool do PgAdmin, começando pelos arquivos da ETAPA 6, na seguinte sequencia "CREATE DATABASE BIBLIOTECA.sql" -> "INSERIR DADOS.sql". Logo após execute os arquivos da ETAPA 7, seguinte sequência "CRIAR FUNCOES.sql" -> "CRIAR GATILHOS.sql" -> "CRIAR USUARIO.sql"</p>
 <h1>Dependencias do node_modules</h1>
 <ul>
