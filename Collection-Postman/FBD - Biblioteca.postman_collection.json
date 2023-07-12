@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "b398d73b-8fb7-4e4d-bef5-e32813260d8b",
+		"name": "FBD - Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AVALIACAO",
+			"item": [
+				{
+					"name": "ADD AVALIACAO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ava_cpf",
+									"value": "14876351090",
+									"type": "default"
+								},
+								{
+									"key": "ava_isbn",
+									"value": "5648754252122",
+									"type": "default"
+								},
+								{
+									"key": "nota",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "comentario",
+									"value": "Livro pessimo",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/avaliacao",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE AVALIACAO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/avaliacao",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL AVALIACAO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/avaliacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW AVALIACAO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE AVALIACAO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "emp_cpf",
+									"value": "14876351090",
+									"type": "default"
+								},
+								{
+									"key": "emp_isbn",
+									"value": "8643982122175",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/avaliacao",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USUARIO",
+			"item": [
+				{
+					"name": "ADD USUARIO",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USUARIO",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW USUARIO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL USUARIOS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USUARIO",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LIVRO",
+			"item": [
+				{
+					"name": "ADD LIVRO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isbn",
+									"value": "9968754292548",
+									"type": "default"
+								},
+								{
+									"key": "titulo",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "autor",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "editora",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "datapublicacao",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/livro",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"livro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE LIVRO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "isbn",
+									"value": "77798754292548",
+									"type": "default"
+								},
+								{
+									"key": "titulo",
+									"value": "Logica para computacao",
+									"type": "default"
+								},
+								{
+									"key": "autor",
+									"value": "Eu",
+									"type": "default"
+								},
+								{
+									"key": "editora",
+									"value": "Abril",
+									"type": "default"
+								},
+								{
+									"key": "datapublicacao",
+									"value": "2013-09-27",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/api/livros",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW LIVRO",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL LIVROS",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR LIVRO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/livro?id=3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"livro"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EMPRESTIMO",
+			"item": [
+				{
+					"name": "ADD EMPRESTIMO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "emp_cpf",
+									"value": "14876351090",
+									"type": "default"
+								},
+								{
+									"key": "emp_isbn",
+									"value": "5648754252122",
+									"type": "default"
+								},
+								{
+									"key": "nota",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "comentario",
+									"value": "Livro pessimo",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/emprestimo",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"emprestimo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE EMPRESTIMO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/avaliacao",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL EMPRESTIMO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/avaliacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"avaliacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW EMPRESTIMO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/emprestimo?cpf=14876351090&isbn=6524842172182",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"emprestimo"
+							],
+							"query": [
+								{
+									"key": "cpf",
+									"value": "14876351090"
+								},
+								{
+									"key": "isbn",
+									"value": "6524842172182"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE EMPRESTIMO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/emprestimo?cpf=14876351090&isbn=6524842172182",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"emprestimo"
+							],
+							"query": [
+								{
+									"key": "cpf",
+									"value": "14876351090"
+								},
+								{
+									"key": "isbn",
+									"value": "6524842172182"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FAVORITO",
+			"item": [
+				{
+					"name": "ADD FAVORITO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "emp_cpf",
+									"value": "14876351090",
+									"type": "default"
+								},
+								{
+									"key": "emp_isbn",
+									"value": "5648754252122",
+									"type": "default"
+								},
+								{
+									"key": "nota",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "comentario",
+									"value": "Livro pessimo",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/favorito",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favorito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE FAVORITO",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/favorito",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favorito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL FAVORITOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/favoritos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favoritos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SHOW FAVORITO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/favorito?cpf=76338860059&isbn=2148985322182",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favorito"
+							],
+							"query": [
+								{
+									"key": "cpf",
+									"value": "76338860059"
+								},
+								{
+									"key": "isbn",
+									"value": "2148985322182"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE FAVORITO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/api/favorito?cpf=14876351090&isbn=6524842172182",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"favorito"
+							],
+							"query": [
+								{
+									"key": "cpf",
+									"value": "14876351090"
+								},
+								{
+									"key": "isbn",
+									"value": "6524842172182"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
